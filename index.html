@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Campo Sustentável | Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="logo">
+            <h1>🌱 Campo Sustentável</h1>
+            <p>Agro forte, futuro sustentável</p>
+        </div>
+        <!-- Menu de navegação -->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção Início -->
+        <section id="inicio" class="secao">
+            <div class="banner">
+                <h2>Equilíbrio entre produção e meio ambiente</h2>
+                <p>Conheça a importância da agricultura familiar e da preservação das nascentes para um futuro sustentável.</p>
+            </div>
+        </section>
+
+        <!-- Seção Sobre o tema -->
+        <section id="sobre" class="secao">
+            <h2>Sobre a agricultura familiar</h2>
+            <article>
+                <p>A agricultura familiar é responsável por grande parte dos alimentos que chegam à nossa mesa. Ela garante comida fresca, fixa o homem no campo, movimenta a economia local e preserva o meio ambiente.</p>
+                <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600" alt="Agricultura familiar no campo" class="imagem-responsiva">
+                <p><strong>Fonte:</strong> Dados da FAO mostram que a agricultura familiar produz cerca de 70% dos alimentos no mundo.</p>
+            </article>
+        </section>
+
+        <!-- Seção Problema ambiental -->
+        <section id="problema" class="secao">
+            <h2>Problema: degradação das nascentes e falta de práticas sustentáveis</h2>
+            <article>
+                <p>O desmatamento, o uso incorreto do solo e a poluição ameaçam as nascentes de água. Sem água de qualidade, a produção agrícola fica comprometida e o meio ambiente sofre.</p>
+                <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50c6?w=600" alt="Nascente de água poluída" class="imagem-responsiva">
+                <p>Além disso, muitos agricultores não conhecem técnicas sustentáveis para produzir sem agredir a natureza.</p>
+            </article>
+        </section>
+
+        <!-- Seção Soluções sustentáveis -->
+        <section id="solucoes" class="secao">
+            <h2>Soluções sustentáveis</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>🌿 Preservar nascentes</h3>
+                    <p>Plantar árvores ao redor das nascentes, cercar a área e evitar desmatamento.</p>
+                </div>
+                <div class="card">
+                    <h3>💧 Irrigação eficiente</h3>
+                    <p>Usar gotejamento e captação de água da chuva para reduzir desperdício.</p>
+                </div>
+                <div class="card">
+                    <h3>🌱 Agroecologia</h3>
+                    <p>Produzir sem agrotóxicos, com adubação orgânica e rotação de culturas.</p>
+                </div>
+                <div class="card">
+                    <h3>🤝 Apoio à agricultura familiar</h3>
+                    <p>Incentivar feiras orgânicas, cooperativas e políticas públicas.</p>
+                </div>
+            </div>
+            <!-- Tabela com dados sobre preservação -->
+            <h3>Comparação: Práticas sustentáveis x convencionais</h3>
+            <table class="tabela-dados">
+                <thead>
+                    <tr>
+                        <th>Prática</th>
+                        <th>Conservação da água</th>
+                        <th>Saúde do solo</th>
+                        <th>Biodiversidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sustentável</td>
+                        <td>Alta</td>
+                        <td>Melhora contínua</td>
+                        <td>Preservada</td>
+                    </tr>
+                    <tr>
+                        <td>Convencional sem cuidados</td>
+                        <td>Baixa</td>
+                        <td>Degradação</td>
+                        <td>Reduzida</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Seção Quiz interativo (funcionalidade principal) -->
+        <section id="quiz" class="secao fundo-claro">
+            <h2>🌎 Quiz: Teste seus conhecimentos ambientais</h2>
+            <p>Responda as perguntas e veja quanto você sabe sobre agricultura sustentável e preservação!</p>
+            <div class="quiz-container">
+                <div id="pergunta" class="pergunta"></div>
+                <div id="alternativas" class="alternativas"></div>
+                <button id="proximoBtn" class="botao">Próxima pergunta</button>
+                <div id="resultadoQuiz" class="resultado"></div>
+            </div>
+        </section>
+
+        <!-- Seção Simulador de economia de água (funcionalidade extra) -->
+        <section id="simulador" class="secao">
+            <h2>💧 Simulador de economia de água</h2>
+            <p>Calcule quantos litros de água você pode economizar por ano adotando práticas sustentáveis.</p>
+            <div class="simulador-container">
+                <label for="area">Área irrigada (em m²):</label>
+                <input type="number" id="area" placeholder="Ex: 1000">
+                <label for="metodo">Método atual:</label>
+                <select id="metodo">
+                    <option value="sulco">Irrigação por sulco (menos eficiente)</option>
+                    <option value="aspersao">Aspersão tradicional</option>
+                    <option value="gotejamento">Gotejamento (eficiente)</option>
+                </select>
+                <button id="calcularEconomia" class="botao">Calcular economia</button>
+                <p id="resultadoEconomia" class="resultado"></p>
+                <small>Comparação com o método mais sustentável (gotejamento).</small>
+            </div>
+        </section>
+
+        <!-- Seção Conclusão -->
+        <section id="conclusao" class="secao">
+            <h2>Conclusão</h2>
+            <article>
+                <p>O equilíbrio entre produção agrícola e meio ambiente é possível. Com a agricultura familiar sustentável e a preservação das nascentes, garantimos alimentos saudáveis e um futuro melhor para todos.</p>
+                <p><strong>Campo Sustentável</strong> – porque a natureza agradece e as próximas gerações também.</p>
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600" alt="Campo sustentável" class="imagem-responsiva">
+            </article>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Projeto desenvolvido para o Concurso Agrinho 2026 | Tema: Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+        <p>© 2026 - Todos os conteúdos são autorais ou licenciados para uso educacional.</p>
+    </footer>
+
+    <!-- Botão de acessibilidade fixo -->
+    <div id="acessibilidade" class="acessibilidade">
+        <button id="aumentarFonte" class="btn-acess" title="Aumentar fonte">A+</button>
+        <button id="diminuirFonte" class="btn-acess" title="Diminuir fonte">A-</button>
+        <button id="altoContraste" class="btn-acess" title="Alto contraste">🌓 Contraste</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
